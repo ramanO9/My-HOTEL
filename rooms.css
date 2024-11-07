@@ -1,0 +1,95 @@
+body {
+    background-image: url();
+    font-family: Arial, sans-serif;
+    background-color: #282727;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+
+header {
+    background-color: #060606;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#filters {
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+}
+.roomdata{
+    width: 700px;
+}
+
+.room {
+    background-color: #424040;
+    padding: 15px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    transition: transform 0.2s ease;
+    display: flex;
+    gap: 400px;
+    
+}
+
+.room:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #f46c32;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgb(140, 117, 117);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    font-size: xx-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

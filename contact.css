@@ -1,0 +1,77 @@
+body {
+    background-image: url(blur.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+}
+
+.contact-box {
+    height: 200px;
+    width: 400px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #0056b3;
+}
+
+.contact-link span.icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+
+.email-link {
+    background-color: #007bff;
+}
+
+.email-link:hover {
+    background-color: #0056b3;
+}
+
+.instagram-link {
+    background-color: #e4405f;
+}
+
+.instagram-link:hover {
+    background-color: #c13545;
+}
+
+/* Font Awesome icons for email and Instagram */
+
+</style>

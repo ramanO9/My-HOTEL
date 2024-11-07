@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Availability</title>
+    <link rel="stylesheet" href="rooms.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Room Availability</h1>
+    </header>
+
+    
+    <section id="filters">
+        <label for="priceRange">Price Range:</label>
+        <select id="priceRange" onchange="filterRooms()">
+            <option value="all">All</option>
+            <option value="under200">$200 and below</option>
+            <option value="200to300">$200 - $300</option>
+            <option value="above300">$300 and above</option>
+        </select>
+    </section>
+
+   
+    <section id="rooms">
+        
+        <div class="room" data-price="150">
+            <div class="roomdata"><h3>Standard room</h3>
+                <p>Features: Ideal for budget travelers.</p>
+                <p>Price: $150 per night</p>
+                <button onclick="openBookingModal('Deluxe Room', 150)">Book Now</button></div>
+            <div class="roomimg"> <img src="beach-house-1505461_1920.jpg" alt=""  height="200px"></div>
+        </div>
+        <div class="room" data-price="250">
+            <div class="roomdata"><h3>Executive Suite</h3>
+                <p>Features: King bed, Balcony</p>
+                <p>Price: $250 per night</p>
+                <button onclick="openBookingModal('Executive Suite', 250)">Book Now</button></div>
+            <div class="roomimg"> <img src="bedroom-5664223.jpg" alt=""  height="200px"></div>
+        </div>
+        <div class="room" data-price="299">
+            <div class="roomdata"><h3>Deluxe rooms</h3>
+                <p>Features: Upgraded furnishings, decor, and sometimes a larger bathroom.t</p>
+                <p>Price: $299 per night</p>
+                <button onclick="openBookingModal('Executive Suite', 299)">Book Now</button></div>
+            <div class="roomimg"> <img src="lesslux.jpg" alt=""  height="200px"></div>
+        </div>
+        <div class="room" data-price="700">
+            <div class="roomdata"><h3>Executive Suite</h3>
+                <p>Features: King bed, Balcony, Free breakfast</p>
+                <p>Price: $700 per night</p>
+                <button onclick="openBookingModal('Executive Suite', 700)">Book Now</button></div>
+            <div class="roomimg"> <img src="last second.jpg" alt=""  height="200px"></div>
+        </div>
+        <div class="room" data-price="900">
+            <div class="roomdata"><h3>Presidential Suite </h3>
+                <p>Features: Presidential Suite: Top offering, with multiple rooms, luxurious decor, exclusive amenities</p>
+                <p>Price: $900 per night</p>
+                <button onclick="openBookingModal('Executive Suite', 900)">Book Now</button></div>
+            <div class="roomimg"> <img src="motel-601218.jpg" alt=""  height="200px"></div>
+        </div>
+        
+    </section>
+
+    
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h2>Confirm Booking</h2>
+            <p id="bookingDetails"></p>
+            <button ><a href="hotellogin.html">Confirm Booking</a></button>
+        </div>
+    </div>
+
+
+</body>
+<script src="rooms.js"></script>
+</html>
